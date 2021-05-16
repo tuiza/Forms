@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teste de Seleção Iaçá</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Processo seletivo Iaçá</h1>
+            <p>Formulário de incrição do processo seletivo 2021</p>
+        </header>
+        <form>
+            <div class="forms">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome"  class="form-control" placeholder="Coloque seu nome" required>
+            </div>
+            <div class="forms">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Coloque seu email" required>
+            </div>
+            <div class="forms">
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" class="form-control" placeholder="Coloque sua idade" required>
+            </div>
+            <div class="forms">
+                <label for="curso">Curso</label>
+                <input type="text" id="curso" class="form-control" placeholder="Coloque seu curso" required>
+            </div>
+            <div class="forms">
+                <p>Em que horário você estaria disponível pra participar do projeto?</p>
+               <select class="form-control"> 
+                   
+                   <option value="manhã">Manhã</option>
+                   <option value="tarde">Tarde</option>
+                   <option value="noite">Noite</option>
+               </select>
+            </div>
+            <div class="forms">
+                <label for="motivo">Qual a sua motivação para participar do grupo?</label>
+                <textarea id="motivo" class="input-textarea"></textarea>
+            </div>
+            
+            <div class="forms">
+                <p>Em qual área voce se identifica?</p>
+                <div class="opcao">
+                    <input type="radio" id="programação" class="input-radio" required name="area" >
+                    <label for="programação">Programação</label>
+                </div>
+                <div class="opcao">
+                    <input type="radio" id="eletronica"  class="input-radio" required name="area">
+                    <label for="eletronica">Eletrônica</label>
+                </div>
+                <div class="opcao">
+                    <input type="radio" id="design" class="input-radio" required name="area">
+                <label for="design">Design</label>
+                </div>
+                
+                
+            </div>
+
+            <div class="forms">
+                <p>Linguagens de programação</p>  
+                
+                <div class="opcao">
+                    <label for="js"><input type="checkbox" id="js" class="input-checkbox">Java Script</label>
+                </div>
+                
+                <div class="opcao"> <label for="html"> <input type="checkbox" id="html" class="input-checkbox">HTML</label></div>
+               
+                
+                <label for="css"><input type="checkbox" id="css" class="input-checkbox">CSS</label>
+                
+            </div>
+            
+            
+            <button type="submit" class="submit-button">Enviar<button>
+        </form>
+        
+    </div>
+</body>
+</html>
